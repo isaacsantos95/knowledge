@@ -46,7 +46,7 @@ router.beforeEach((to, from, next) => {
         const user = JSON.parse(json)
         user && user.admin ? next() : next({ path: '/' })
     } else {
-        next()
+        next() 
     }
 })
 
